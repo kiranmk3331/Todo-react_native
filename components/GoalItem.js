@@ -5,7 +5,7 @@ export default function GoalItem({ goalItem, deleteGoal }) {
   return (
     <View style={styles.goalItem}>
       <Pressable
-        // onPress={() => deleteGoal(goalItem.id)}
+        onPress={() => deleteGoal(goalItem.id)}
         android_ripple={{ color: "#410d8a" }}
       >
         <Text style={styles.goalText}>{goalItem.text}</Text>
@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
   },
   goalText: {
     color: "white",
-    padding: 8,
+    padding: 10,
+    fontSize: 20,
   },
 });
