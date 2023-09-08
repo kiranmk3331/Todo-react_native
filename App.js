@@ -16,7 +16,7 @@ export default function App() {
   return (
     <View style={styles.appContainer}>
       <GoalInput addGoalHandler={addGoalHandler} />
-      <Goals courseGoals={courseGoals} />
+      <Goals courseGoals={courseGoals} setCourseGoals={setCourseGoals} />
     </View>
   );
 }
